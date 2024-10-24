@@ -6,6 +6,8 @@ import TraditionalsPosts from './Components/TraditionalsPosts';
 import PostsRQ from './Components/PostsRQ';
 import RQPostDetails from './Components/RQPostDetails';
 import PagginatedRQ from './Components/PagginatedRQ';
+import InfiniteScroll1 from './Components/InfiniteScroll1';
+import InfiniteScroll2 from './Components/InfiniteScroll2';
 
 function App() {
   
@@ -20,6 +22,8 @@ function App() {
           <Route exact path='/rq-posts' element={<PostsRQ/>}/>
           <Route exact path='/rq-post/:postId' element={<RQPostDetails/>}/>
           <Route exact path="/users"  element={<PagginatedRQ/>} />
+          <Route exact path="/users-infinite"  element={<InfiniteScroll1/>} />
+          <Route exact path="/users-infinite2"  element={<InfiniteScroll2/>} />
         </Routes>
       </BrowserRouter>
     </>
